@@ -50,7 +50,7 @@
             <div class="form-group">
                 <spam id="note" class="note">Preencha abaixo apenas se marcou sim na opção acima</spam>
                 <p>Qual curso?</p>
-                <select id="select" name="role" class="form-control" required>
+                <select id="select" name="role" class="form-control">
                     <option disabled selected value> Selecione o curso </option>
                     <option value="science">Ciência da Computação</option>
                     <option value="system">Sistema de Informação</option>
@@ -89,13 +89,14 @@
             </div>
 
             <div class="form-group">
-                <label id="comment-label" for="comment">Diga o que você achou sobre a área</label>
-                <textarea id="comment" name="comment" class="input-textarea-comment"
-                    placeholder="Insira seu comentário"></textarea>
+                <label id="comment-label" for="comment">Diga o que você achou sobre a área <span
+                        class="clue">*</span></label>
+                <textarea id="comment" name="comment" class="input-textarea-comment" placeholder="Insira seu comentário"
+                    required></textarea>
             </div>
 
             <div class="form-group">
-                <p> Você recomendaria para mais alguém?</p>
+                <p> Você recomendaria para mais alguém? <span class="clue">*</span></p>
                 <select id="select" name="role" class="form-control" required>
                     <option disabled selected value> Selecione a opção </option>
                     <option value="true">Sim</option>
